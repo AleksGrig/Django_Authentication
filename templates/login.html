@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <h1>Login</h1>
+        <p>Please login using your valid credentials</p>
+        <form action="" method="POST" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><input type="submit" value="Login"></input></p>
+        </form>
+    </body>
+</html>
